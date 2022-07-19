@@ -104,7 +104,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
   # _pages
@@ -121,3 +121,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+sass:
+  sass_dir: _sass
+  style: compressed
