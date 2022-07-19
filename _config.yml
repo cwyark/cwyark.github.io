@@ -25,6 +25,13 @@ github_username: cwyark
 minimal_mistakes_skin: default
 search: true
 
+# Analytics
+analytics:
+  provider : "google-gtag"
+  google:
+    tracking_id : "G-QBTQQ9KEYL"
+    anonymize_ip : true
+
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
