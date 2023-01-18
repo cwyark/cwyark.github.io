@@ -68,7 +68,7 @@ plugins:
 author:
   name   : "YuSheng"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "A software engineer and a learner. Also, I'm also an amateur singer sometimes. 😁"
+  bio    : "A software engineer, a learner and an amateur singer. 😁"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
