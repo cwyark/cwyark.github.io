@@ -29,7 +29,7 @@ search: true
 analytics:
   provider : "google-gtag"
   google:
-    tracking_id : "G-QBTQQ9KEYL"
+    tracking_id : "G-XQ8DWG2FX6"
     anonymize_ip : true
 
 # Build settings
