@@ -75,7 +75,7 @@ author:
       url: "https://cwyark.me"
     - label: "Obsidian"
       icon: "fa fa-book"
-      url: "https://publish.obsidian.md/cwyark-notes"
+      url: "https://notes.cwyark.me"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/gcarfans"
@@ -93,7 +93,7 @@ footer:
       url: "https://github.com/cwyark"
     - label: "Obsidian"
       icon: "fa fa-book"
-      url: "https://publish.obsidian.md/cwyark-notes"
+      url: "https://notes.cwyark.me"
 
 defaults:
   # _posts
