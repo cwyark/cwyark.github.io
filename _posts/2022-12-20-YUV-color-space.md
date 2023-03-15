@@ -26,11 +26,11 @@ YUV defines each pixel has:
 
 **luminance**:
 
-![luminance](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/ComputerVision/Attachments/luminance-illustratiion.png){:height="100px" width="400px"}
+![luminance](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/ComputerVision/Attachments/luminance-illustratiion.png){:height="100px" width="400px"}
 
 **chrominance** (red and blue projection):
 
-![chrominance](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/ComputerVision/Attachments/chrominance-illustration.png){:height="100px" width="400px"}
+![chrominance](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/ComputerVision/Attachments/chrominance-illustration.png){:height="100px" width="400px"}
 
 ## 🔍 Common YUV formats
 
@@ -38,22 +38,22 @@ YUV defines each pixel has:
 
 Each pixel contains `Y`, `U` and `V` compoments and each compoments are `1 byte`.
 
-![yuv4:4:4](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/ComputerVision/Attachments/color-format-yuv444.excalidraw.svg)
+![yuv4:4:4](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/ComputerVision/Attachments/color-format-yuv444.excalidraw.svg)
 
 ### YUV4:2:2
 
 Each 2 horizontal pixels contains 2 Y, 1 U and V compoments and both pixels share the same U and V
 
-![yuv4:2:2](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/ComputerVision/Attachments/color-format-yuv422.excalidraw.svg)
+![yuv4:2:2](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/ComputerVision/Attachments/color-format-yuv422.excalidraw.svg)
 
 ### YUV4:2:0
 
 Each 2 `horizontal` and 2 `vertical` pixels (total 4 pixels) contains 4 `Y`, 1 `U ` and 1 `V` compoments and four pixels share the same `U` and `V`. 
 
-![yuv4:2:0](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/ComputerVision/Attachments/color-format-yuv420.excalidraw.svg)
+![yuv4:2:0](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/ComputerVision/Attachments/color-format-yuv420.excalidraw.svg)
 
 ### YUV4:1:1
 
 Each 2 `horizontal` and 2 `vertical` pixels (total 4 pixels) contains 4 `Y`, 1 `U ` and 1 `V` compoments and four pixels share the same `U` and `V`. 
 
-![yuv4:1:1](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/ComputerVision/Attachments/color-format-yuv411.excalidraw.svg)
+![yuv4:1:1](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/ComputerVision/Attachments/color-format-yuv411.excalidraw.svg)

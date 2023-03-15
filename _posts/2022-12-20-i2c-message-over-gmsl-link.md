@@ -12,15 +12,15 @@ tags:
 - nvidia-jetson
 ---
 
-GMSL solve conflict I2C address problem in a serial line.
+GMSL uses address translation to assign unique virtual I2C addresses to devices on a serial line, resolving conflicts that can arise from multiple devices with the same physical I2C address
 
 <!--more-->
 
-## 〰️ I2C Message over GMSL Link
+## ▪️ I2C Messages over GMSL Link
 
-The GMSL protocol allows host controller to control remote serializer and sensor through i2c messages which is passthroughed by GMSL link (control stream).
+The GMSL protocol facilitates I2C communication between a host controller and remote serializer and sensor devices by passing messages through the dedicated control stream within the GMSL link. This allows the host controller to control and manage the remote devices without the need for additional interfaces or wiring, simplifying the design of GMSL systems.
 
-![I2C Message over GMSL Link](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase%20%F0%9F%93%93/Hardware/SerDes/Attachments/i2c-message-over-gmsl-link.excalidraw.svg)
+![I2C Messages over GMSL Link](https://publish-01.obsidian.md/access/ae397ad8ea8e6bd32fc8c4933cc15acb/200%20KnowledgeBase/Hardware/SerDes/Attachments/i2c-message-over-gmsl-link.excalidraw.svg)
 
 - Downlink (camera -> host controller) 
 In front of link side (the link between deserializer and serializer), deserializer decapsulated control message and translate into i2c format, then forward to upstream i2c lines. (SDA and SCL).
@@ -29,10 +29,10 @@ On the uplink direction, host controller generate START bit, followed by device 
 
 ## ⚪ Conflict Address on the Same I2C Channel
 
-Each camera modules have identical i2c slave address. For example, in Leopard AR0233 GMSL camera, it's MAX9295 use 0x62 and CMOS sensor use 0x10, it should be the same in other Leopard AR0233 GMSL camera. As a result, when two identical cameras are shared with the same i2c channels, there should have a i2c address conflict issue.
+Each camera module, such as the Leopard AR0233 GMSL camera, may have identical I2C slave addresses for its MAX9295 serializer and CMOS sensor. This can cause address conflict issues when multiple identical cameras are connected to the same I2C channel. To avoid such conflicts, differentiating methods such as modifying the serializer's address or using an I2C multiplexer can be employed.
 
 ### 💡 Remapping Mechanism
 
-Serializer (e.g. MAX9295, MAX96705) provides a way to change their adddress at runtime, which allows you don't need extra hardware change (e.g strap pin). Simply change by setting serializer's register. (0x01 at MAX9295)
+Many serializers, such as the MAX9295 and MAX96705, offer the ability to remap their addresses at runtime, eliminating the need for additional hardware changes like strap pins. This can be accomplished by simply changing the serializer's register, providing a more flexible and efficient solution for managing device addresses in a hardware design.
 
-Click here to see [sequence diagram](https://publish.obsidian.md/cwyark-notes/200+KnowledgeBase+%F0%9F%93%93/Hardware/SerDes/I2C+Messages+over+GMSL+Link#%F0%9F%92%A1+Remapping+Mechanism){:target="_blank"} on it works.
+Click here to see [sequence diagram](https://notes.cwyark.me/200+KnowledgeBase/Hardware/SerDes/I2C+Messages+over+GMSL+Link#%F0%9F%92%A1+Remapping+Mechanism){:target="_blank"} on it works.
