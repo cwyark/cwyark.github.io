@@ -24,7 +24,7 @@ twitter_username: gcarfans
 github_username: cwyark
 minimal_mistakes_skin: default
 search: true
-
+repository: cwyark/cwyark.github.io
 comments:
   provider: "giscus"
   giscus:
