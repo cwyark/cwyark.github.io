@@ -28,12 +28,12 @@ search: true
 comments:
   provider: "giscus"
   giscus:
-    repo_id              : R_kgDOHq78lw
-    category_name        : General
-    category_id          : DIC_kwDOHq78l84CVbtC
-    discussion_term      : pathname
-    reactions_enabled    : 1
-    theme                : light
+    repo_id              : "R_kgDOHq78lw"
+    category_name        : "General"
+    category_id          : "DIC_kwDOHq78l84CVbtC"
+    discussion_term      : "pathname"
+    reactions_enabled    : "1"
+    theme                : "light"
 
 # Analytics
 analytics:
